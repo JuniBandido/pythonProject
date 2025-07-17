@@ -27,7 +27,7 @@ def calculator():
     elif op == 4:
         print(f"El resultado de {x} / {y} es {x / y}")
     else:
-        print("La opcion que escogió no existe")
+        print("La opcion que escogió es incorrecta.")
 
 login()
 calculator()
