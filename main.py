@@ -3,13 +3,9 @@
 #Developer 1 tendrá la tarea de hacer una calculadora funcional.
 
 def login():
-    users = ["juan", "pedro", "lucas"]
-    passwords = [123, 456, 789]
-    userLogin = input("Introduce tu nombre de usuario\n")
-    passLogin = int(input("Introduce tu contraseña\n"))
-    if userLogin in users and passLogin in passwords:
-        return print(f"Bienvenido {userLogin}")
+    users = {123: "juan", 456: "pedro", 789: "maria"}
+    userLogin = int(input("Introduce tu contraseña\n"))
+    if userLogin in users:
+        return print(f"Bienvenid@ {users[userLogin]}")
     else:
         return print("Incorrecto")
-
-login()
